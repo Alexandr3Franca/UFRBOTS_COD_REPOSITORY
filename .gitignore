@@ -1,0 +1,67 @@
+# ===================================================================
+# Arquivo .gitignore Mestre para Projetos de Robótica e Visão
+# Combina templates para Python, Arduino, PlatformIO e arquivos gerais.
+# ===================================================================
+
+# Arquivos de Sistema Operacional e Editores de Código (Geral)
+# -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ===================================================================
+# Python
+# -------------------------------------------------------------------
+# Ambientes virtuais
+venv/
+env/
+.venv/
+.env/
+
+# Caches e arquivos compilados do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pastas de distribuição e build
+build/
+dist/
+*.egg-info/
+sdist/
+*.egg
+
+# Arquivos de notebooks Jupyter
+.ipynb_checkpoints
+
+# ===================================================================
+# Arduino
+# -------------------------------------------------------------------
+# Pasta de build temporária do Arduino IDE
+# Geralmente fica fora do projeto, mas é uma boa prática incluir.
+build-arduino/
+*build/
+
+# ===================================================================
+# PlatformIO (para ESP32 e outros microcontroladores)
+# -------------------------------------------------------------------
+# Esta seção é essencial para quando você começar a usar ESP32 com PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.travis.yml
+
+# ===================================================================
+# Modelos de IA (Opcional, mas Altamente Recomendado)
+# -------------------------------------------------------------------
+# Modelos treinados podem ser muito grandes. É melhor ignorá-los
+# e explicar no README como treinar ou baixar o modelo final.
+# O modelo base (ex: yolo11n-pose.pt) PODE ser incluído se for pequeno.
+*.pt
+*.pth
+*.weights
+
+# Pasta de resultados de treinamento do Ultralytics/YOLO
+runs/
